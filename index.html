@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive-Web</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-     <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <nav>
+    <div class="nav">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
@@ -19,15 +21,35 @@
 
         <label class="logo">DesignX</label>
         <ul>
-            <li><a class="active" href="">Home</a></li>
+            <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </div>
 
-    <section></section>
+
+    <section id="home" class="home">
+        <div class="banner-image">
+            <div class="banner-content">
+                <h1>Only I can change my life <br>
+                    <span>No one can do it for me</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A in ea aliquam saepe quam assumenda.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <h1 class="title">About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero aspernatur reprehenderit eligendi
+            quibusdam odio cumque architecto nobis voluptatem hic!</p>
+        <div class="btn">
+            <a href="#">Learn More</a>
+        </div>
+    </section>
 
 </body>
 

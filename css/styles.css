@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Allura|Josefin+Slab&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,13 +8,13 @@
           box-sizing: border-box;
 }
 
-nav {
+.nav {
   background: #0082e6;
   height: 80px;
   width: 100%;
 }
 
-nav label.logo {
+.nav label.logo {
   color: white;
   font-size: 35px;
   line-height: 80px;
@@ -21,18 +22,18 @@ nav label.logo {
   font-weight: bold;
 }
 
-nav ul {
+.nav ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li {
+.nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-nav ul li a {
+.nav ul li a {
   color: white;
   font-size: 17px;
   text-transform: uppercase;
@@ -40,14 +41,14 @@ nav ul li a {
   border-radius: 5px;
 }
 
-nav a.active,
-nav a:hover {
+.nav a.active,
+.nav a:hover {
   background: #1b9bff;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-nav .checkbtn {
+.nav .checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -57,7 +58,7 @@ nav .checkbtn {
   display: none;
 }
 
-nav #check {
+.nav #check {
   display: none;
 }
 
@@ -66,16 +67,16 @@ nav #check {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a {
+  .nav ul li a {
     font-size: 16px;
   }
 }
 
 @media (max-width: 858px) {
-  nav .checkbtn {
+  .nav .checkbtn {
     display: block;
   }
-  nav ul {
+  .nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -86,16 +87,16 @@ nav #check {
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  nav ul li {
+  .nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a {
+  .nav ul li a {
     font-size: 20px;
   }
-  nav ul li a :hover,
-  nav ul li a .active {
+  .nav ul li a :hover,
+  .nav ul li a .active {
     background: none;
     color: #0082e6;
   }
@@ -105,9 +106,71 @@ nav #check {
   left: 0;
 }
 
-section {
+.banner-image {
   background: url(../img/bg.jpeg) no-repeat;
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: 600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  text-transform: uppercase;
+  line-height: 38px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-content h1 span {
+  color: darkblue;
+}
+
+.about {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.about h1.title {
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: 'Allura', cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+
+.about p {
+  font-family: 'Josefin Slab', serif;
+}
+
+.about .btn a {
+  display: block;
+  width: 180px;
+  height: 35px;
+  border: 2px solid blue;
+  line-height: 35px;
+  margin: 25px auto 0;
+  color: blue;
+  text-align: center;
+}
+
+.about .btn a:hover {
+  background-color: lightgray;
+  color: blue;
 }
 /*# sourceMappingURL=styles.css.map */
