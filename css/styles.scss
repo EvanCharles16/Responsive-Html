@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Slab&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +17,7 @@
     background: #0082e6;
     height: 80px;
     width: 100%;
+    position: fixed;
 
     label.logo {
         color: white;
@@ -160,8 +165,8 @@
         font-family: 'Josefin Slab', serif;
     }
 
-    .btn{
-        a{
+    .btn {
+        a {
             display: block;
             width: 180px;
             height: 35px;
@@ -170,9 +175,9 @@
             margin: 25px auto 0;
             color: blue;
             text-align: center;
-    } 
+        }
 
-        a:hover{
+        a:hover {
             background-color: lightgray;
             color: blue;
         }
@@ -199,21 +204,21 @@
         font-family: 'Josefin Slab', serif;
     }
 
-    .diff-services{
+    .diff-services {
         display: flex;
         margin-top: 35px;
         justify-content: space-between;
     }
 
-    .diff-services-item{
+    .diff-services-item {
         width: 30%;
 
-        img{
+        img {
             width: 100%;
             margin-bottom: 25px;
         }
 
-        h3{
+        h3 {
             color: blue;
             margin-bottom: 15px;
         }
@@ -222,4 +227,134 @@
 
 
 // Contact Us
+.contact {
+    padding: 5% 10%;
+    text-align: center;
 
+
+    h1.title {
+        margin-bottom: 20px;
+        color: #444444;
+        font-family: 'Allura', cursive;
+        text-transform: uppercase;
+        font-size: 38px;
+        word-spacing: 25px;
+        letter-spacing: 5px;
+    }
+
+    .form-input {
+        margin-bottom: 15px;
+
+        input[type="text"],
+        input[type="email"] {
+            width: 250px;
+            padding: 12px 20px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            width: 250px;
+            padding: 12px 20px;
+            height: 80px;
+            resize: none;
+            border: 1px solid #ccc;
+        }
+
+    }
+
+    .btn {
+        a {
+            display: block;
+            width: 180px;
+            height: 35px;
+            border: 2px solid blue;
+            line-height: 35px;
+            margin: 25px auto 0;
+            color: blue;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: lightgray;
+            color: blue;
+        }
+    }
+}
+
+// Portfolio
+.portfolio {
+    padding: 5% 10%;
+    text-align: center;
+    background-color: #f4f4f4;
+
+
+    h1.title {
+        margin-bottom: 20px;
+        color: #444444;
+        font-family: 'Allura', cursive;
+        text-transform: uppercase;
+        font-size: 38px;
+        word-spacing: 25px;
+        letter-spacing: 5px;
+    }
+
+    .portfolio-wrapper {
+        .team {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .team-1.team {
+            margin-bottom: 25px;
+        }
+
+        .team-member {
+            width: 30%;
+            height: auto;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                display: block;
+                height: auto;
+                transition: all 0.5s ease;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+// Footer
+.footer {
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding: 20px 0;
+
+    a {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+// arrow
+.arrow{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+    a i{
+        font-size: 48px;
+        color: blue;
+    }
+}

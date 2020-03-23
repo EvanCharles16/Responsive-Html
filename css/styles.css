@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Allura|Josefin+Slab&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +16,7 @@
   background: #0082e6;
   height: 80px;
   width: 100%;
+  position: fixed;
 }
 
 .nav label.logo {
@@ -216,5 +221,132 @@
 .services .diff-services-item h3 {
   color: blue;
   margin-bottom: 15px;
+}
+
+.contact {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.contact h1.title {
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: 'Allura', cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+
+.contact .form-input {
+  margin-bottom: 15px;
+}
+
+.contact .form-input input[type="text"],
+.contact .form-input input[type="email"] {
+  width: 250px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+}
+
+.contact .form-input textarea {
+  width: 250px;
+  padding: 12px 20px;
+  height: 80px;
+  resize: none;
+  border: 1px solid #ccc;
+}
+
+.contact .btn a {
+  display: block;
+  width: 180px;
+  height: 35px;
+  border: 2px solid blue;
+  line-height: 35px;
+  margin: 25px auto 0;
+  color: blue;
+  text-align: center;
+}
+
+.contact .btn a:hover {
+  background-color: lightgray;
+  color: blue;
+}
+
+.portfolio {
+  padding: 5% 10%;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.portfolio h1.title {
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: 'Allura', cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+
+.portfolio .portfolio-wrapper .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .portfolio-wrapper .team-1.team {
+  margin-bottom: 25px;
+}
+
+.portfolio .portfolio-wrapper .team-member {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-wrapper .team-member img {
+  width: 100%;
+  display: block;
+  height: auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio .portfolio-wrapper .team-member img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #444444;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: white;
+  font-size: 20px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow a i {
+  font-size: 48px;
+  color: blue;
 }
 /*# sourceMappingURL=styles.css.map */
