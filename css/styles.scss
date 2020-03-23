@@ -179,4 +179,47 @@
     }
 }
 
+// Services
+.services {
+    background: #f4f4f4;
+    padding: 5% 10%;
+    text-align: center;
+
+    h1.title {
+        margin-bottom: 20px;
+        color: #444444;
+        font-family: 'Allura', cursive;
+        text-transform: uppercase;
+        font-size: 38px;
+        word-spacing: 25px;
+        letter-spacing: 5px;
+    }
+
+    p {
+        font-family: 'Josefin Slab', serif;
+    }
+
+    .diff-services{
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-between;
+    }
+
+    .diff-services-item{
+        width: 30%;
+
+        img{
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        h3{
+            color: blue;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+// Contact Us
 
