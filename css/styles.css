@@ -49,8 +49,8 @@ html {
 .nav a.active,
 .nav a:hover {
   background: #1b9bff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav .checkbtn {
@@ -89,8 +89,8 @@ html {
     top: 80px;
     left: -100%;
     text-align: center;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .nav ul li {
     display: block;
@@ -152,7 +152,7 @@ html {
 .about h1.title {
   margin-bottom: 20px;
   color: #444444;
-  font-family: 'Allura', cursive;
+  font-family: "Allura", cursive;
   text-transform: uppercase;
   font-size: 38px;
   word-spacing: 25px;
@@ -160,7 +160,7 @@ html {
 }
 
 .about p {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
 }
 
 .about .btn a {
@@ -188,7 +188,7 @@ html {
 .services h1.title {
   margin-bottom: 20px;
   color: #444444;
-  font-family: 'Allura', cursive;
+  font-family: "Allura", cursive;
   text-transform: uppercase;
   font-size: 38px;
   word-spacing: 25px;
@@ -196,7 +196,7 @@ html {
 }
 
 .services p {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
 }
 
 .services .diff-services {
@@ -231,7 +231,7 @@ html {
 .contact h1.title {
   margin-bottom: 20px;
   color: #444444;
-  font-family: 'Allura', cursive;
+  font-family: "Allura", cursive;
   text-transform: uppercase;
   font-size: 38px;
   word-spacing: 25px;
@@ -244,13 +244,13 @@ html {
 
 .contact .form-input input[type="text"],
 .contact .form-input input[type="email"] {
-  width: 250px;
+  width: 50%;
   padding: 12px 20px;
   border: 1px solid #ccc;
 }
 
 .contact .form-input textarea {
-  width: 250px;
+  width: 50%;
   padding: 12px 20px;
   height: 80px;
   resize: none;
@@ -282,7 +282,7 @@ html {
 .portfolio h1.title {
   margin-bottom: 20px;
   color: #444444;
-  font-family: 'Allura', cursive;
+  font-family: "Allura", cursive;
   text-transform: uppercase;
   font-size: 38px;
   word-spacing: 25px;
@@ -325,7 +325,7 @@ html {
 .footer {
   width: 100%;
   text-align: center;
-  background: #444444;
+  background: #0082e6;
   padding: 20px 0;
 }
 
@@ -347,6 +347,6 @@ html {
 
 .arrow a i {
   font-size: 48px;
-  color: blue;
+  color: #c4c4c4;
 }
 /*# sourceMappingURL=styles.css.map */

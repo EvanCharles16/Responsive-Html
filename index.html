@@ -1,140 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive-Web</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive-Web</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
 
+	<body>
+		<div class="nav">
+			<input type="checkbox" id="check" />
+			<label for="check" class="checkbtn">
+				<i class="fa fa-bars"></i>
+			</label>
 
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+			<label class="logo">DesignX</label>
+			<ul>
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
 
-<body>
-    <div class="nav">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
+		<section id="home" class="home">
+			<div class="banner-image">
+				<div class="banner-content">
+					<h1 style="color: black;">
+						Only I can change my life <br />
+						<span>No one can do it for me</span>
+					</h1>
+					<p style="color: black; font-size: 20px; margin-top: 50px;">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. A in ea
+						aliquam saepe quam assumenda.
+					</p>
+				</div>
+			</div>
+		</section>
 
-        <label class="logo">DesignX</label>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+		<section id="about" class="about">
+			<h1 class="title">About Us</h1>
+			<p style="font-size: 20px;">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero
+				aspernatur reprehenderit eligendi quibusdam odio cumque architecto nobis
+				voluptatem hic!
+			</p>
+			<div class="btn">
+				<a href="#">Learn More</a>
+			</div>
+		</section>
 
-    <section id="home" class="home">
-        <div class="banner-image">
-            <div class="banner-content">
-                <h1>Only I can change my life <br>
-                    <span>No one can do it for me</span>
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A in ea aliquam saepe quam assumenda.</p>
-            </div>
-        </div>
-    </section>
+		<section id="services" class="services">
+			<h1 class="title">Our Services</h1>
+			<p style="font-size: 20px;">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad
+				temporibus dolorem ea? Vero minus vel aliquam eum commodi cupiditate
+				voluptas unde quisquam possimus dignissimos.
+			</p>
 
+			<div class="diff-services">
+				<div class="diff-services-item">
+					<img src="./img/1.png" alt="services-item" />
+					<h3>Web Development</h3>
+					<p style="font-size: 20px;">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+						provident?
+					</p>
+				</div>
+				<div class="diff-services-item">
+					<img src="./img/2.png" alt="services-item" />
+					<h3>App Development</h3>
+					<p style="font-size: 20px;">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+						provident?
+					</p>
+				</div>
+				<div class="diff-services-item">
+					<img src="./img/3.png" alt="services-item" />
+					<h3>PSD to HTML</h3>
+					<p style="font-size: 20px;">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+						provident?
+					</p>
+				</div>
+			</div>
+		</section>
 
-    <section id="about" class="about">
-        <h1 class="title">About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil libero aspernatur reprehenderit eligendi
-            quibusdam odio cumque architecto nobis voluptatem hic!</p>
-        <div class="btn">
-            <a href="#">Learn More</a>
-        </div>
-    </section>
+		<section id="contact" class="contact">
+			<h1 class="title">Contact Us</h1>
+			<div class="form-wrapper">
+				<div class="form-input">
+					<input type="text" placeholder="Name" />
+				</div>
+				<div class="form-input">
+					<input type="email" placeholder="Email" />
+				</div>
+				<div class="form-input">
+					<input type="text" placeholder="Subject" />
+				</div>
+				<div class="form-input">
+					<textarea placeholder="Message"></textarea>
+				</div>
 
+				<div class="btn">
+					<a href="#">Submit</a>
+				</div>
+			</div>
+		</section>
 
-    <section id="services" class="services">
-        <h1 class="title">Our Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad temporibus dolorem ea? Vero minus vel
-            aliquam eum commodi cupiditate voluptas unde quisquam possimus dignissimos.</p>
+		<section id="portfolio" class="portfolio">
+			<h1 class="title">Our Team</h1>
+			<div class="portfolio-wrapper">
+				<div class="team-1 team">
+					<div class="team-member">
+						<img src="./img/1.png" alt="team" />
+					</div>
+					<div class="team-member">
+						<img src="./img/2.png" alt="team" />
+					</div>
+					<div class="team-member">
+						<img src="./img/3.png" alt="team" />
+					</div>
+				</div>
 
-        <div class="diff-services">
-            <div class="diff-services-item">
-                <img src="./img/1.png" alt="services-item">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, provident?</p>
-            </div>
-            <div class="diff-services-item">
-                <img src="./img/2.png" alt="services-item">
-                <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, provident?</p>
-            </div>
-            <div class="diff-services-item">
-                <img src="./img/3.png" alt="services-item">
-                <h3>PSD to HTML</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, provident?</p>
-            </div>
-        </div>
-    </section>
+				<div class="team-2 team">
+					<div class="team-member">
+						<img src="./img/4.png" alt="team" />
+					</div>
+					<div class="team-member">
+						<img src="./img/5.png" alt="team" />
+					</div>
+					<div class="team-member">
+						<img src="./img/6.png" alt="team" />
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<div class="footer">
+			<a href="#">&copy; 2019 DesignX</a>
+		</div>
 
-    <section id="contact" class="contact">
-        <h1 class="title">Contact Us</h1>
-        <div class="form-wrapper">
-            <div class="form-input">
-                <input type="text" placeholder="Name">
-            </div>
-            <div class="form-input">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="form-input">
-                <input type="text" placeholder="Subject">
-            </div>
-            <div class="form-input">
-                <textarea placeholder="Message"></textarea>
-            </div>
-
-            <div class="btn">
-                <a href="#">Submit</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h1 class="title">Our Team</h1>
-        <div class="portfolio-wrapper">
-            <div class="team-1 team">
-                <div class="team-member">
-                    <img src="./img/1.png" alt="team">
-                </div>
-                <div class="team-member">
-                    <img src="./img/2.png" alt="team">
-                </div>
-                <div class="team-member">
-                    <img src="./img/3.png" alt="team">
-                </div>
-            </div>
-
-            <div class="team-2 team">
-                <div class="team-member">
-                    <img src="./img/4.png" alt="team">
-                </div>
-                <div class="team-member">
-                    <img src="./img/5.png" alt="team">
-                </div>
-                <div class="team-member">
-                    <img src="./img/6.png" alt="team">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="footer">
-        <a href="#">&copy; 2019 DesignX</a>
-    </div>
-
-    <div class="arrow">
-        <a href="#home"><i class="fa fa-eject"></i></a>
-    </div>
-
-</body>
-
+		<div class="arrow">
+			<a href="#home"><i class="fa fa-eject"></i></a>
+		</div>
+	</body>
 </html>
